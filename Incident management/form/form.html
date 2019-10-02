@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report and incident or accident</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+</head>
+<body id="main_body" >
+
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+
+		<h1><a style="background-color: #040440;">Report and incident or accident</a></h1>
+		<form id="form_84108" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Report and incident or accident</h2>
+			<p></p>
+		</div>
+			<ul >
+
+					<li class="section_break">
+			<h3>Determine the type of incident</h3>
+			<p></p>
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">Were multiple incident types involved </label>
+		<span>
+			<input id="element_1_1" name="element_1" class="element radio" type="radio" value="1" />
+<label class="choice" for="element_1_1">Yes</label>
+<input id="element_1_2" name="element_1" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_1_2">No</label>
+
+		</span>
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Select the most severely impacted incident type </label>
+		<span>
+			<input id="element_2_1" name="element_2" class="element radio" type="radio" value="1" />
+<label class="choice" for="element_2_1">People</label>
+<input id="element_2_2" name="element_2" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_2_2">Assets</label>
+<input id="element_2_3" name="element_2" class="element radio" type="radio" value="3" />
+<label class="choice" for="element_2_3">Environment</label>
+<input id="element_2_4" name="element_2" class="element radio" type="radio" value="4" />
+<label class="choice" for="element_2_4">Security</label>
+
+		</span>
+		</li>		<li class="section_break">
+			<h3>Who sustained this incident?</h3>
+			<p></p>
+		</li>		<li id="li_11" >
+		<label class="description" for="element_11"> </label>
+		<span>
+			<input id="element_11_1" name="element_11" class="element radio" type="radio" value="1" />
+<label class="choice" for="element_11_1">Me</label>
+<input id="element_11_2" name="element_11" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_11_2">Another person</label>
+
+		</span>
+		</li>		<li class="section_break">
+			<h3>When did this incident occur?</h3>
+			<p></p>
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Date </label>
+		<span>
+			<input id="element_6_1" name="element_6_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_6_1">MM</label>
+		</span>
+		<span>
+			<input id="element_6_2" name="element_6_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_6_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_6_3" name="element_6_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_6_3">YYYY</label>
+		</span>
+
+		<span id="calendar_6">
+			<img id="cal_img_6" class="datepicker" src="calendar.gif" alt="Pick a date.">
+		</span>
+		<script type="text/javascript">
+			Calendar.setup({
+			inputField	 : "element_6_3",
+			baseField    : "element_6",
+			displayArea  : "calendar_6",
+			button		 : "cal_img_6",
+			ifFormat	 : "%B %e, %Y",
+			onSelect	 : selectDate
+			});
+		</script>
+
+		</li>		<li id="li_7" >
+		<label class="description" for="element_7">Time </label>
+		<span>
+			<input id="element_7_1" name="element_7_1" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>HH</label>
+		</span>
+		<span>
+			<input id="element_7_2" name="element_7_2" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>MM</label>
+		</span>
+		<span>
+			<input id="element_7_3" name="element_7_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+			<label>SS</label>
+		</span>
+		<span>
+			<select class="element select" style="width:4em" id="element_7_4" name="element_7_4">
+				<option value="AM" >AM</option>
+				<option value="PM" >PM</option>
+			</select>
+			<label>AM/PM</label>
+		</span>
+		</li>		<li id="li_12" >
+		<label class="description" for="element_12">Time category: </label>
+		<div>
+		<select class="element select medium" id="element_12" name="element_12">
+			<option value="" selected="selected"></option>
+<option value="1" >Approved recess (e.g. lunch)</option>
+<option value="2" >Domestic travel</option>
+<option value="3" >On duty (e.g. working on research)</option>
+<option value="4" >Travelling to or from work</option>
+
+		</select>
+		</div>
+		</li>		<li class="section_break">
+			<h3>Determine the type of incident</h3>
+			<p></p>
+		</li>		<li id="li_13" >
+		<label class="description" for="element_13">Select location </label>
+		<div>
+		<select class="element select medium" id="element_13" name="element_13">
+			<option value="" selected="selected"></option>
+<option value="1" >41 Victoria Parade</option>
+<option value="2" >32 Gisborne street</option>
+<option value="3" >300 Grattan Street</option>
+
+		</select>
+		</div>
+		</li>		<li id="li_9" >
+		<label class="description" for="element_9">Location details: </label>
+		<div>
+			<textarea id="element_9" name="element_9" class="element textarea medium"></textarea>
+		</div>
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">Describe the incident with as much detail as possible: </label>
+		<div>
+			<textarea id="element_10" name="element_10" class="element textarea medium"></textarea>
+		</div>
+		</li>
+
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="84108" />
+
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>
+
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
